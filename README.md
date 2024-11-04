@@ -35,3 +35,10 @@ This data set  has a total of 75,001 rows and 8 columns to be worked on and this
 The first step is to clean the data by removing the duplicate in the data set. After cleaning the data set, we are left with 33,788 rows to work with. Then we move on to find the subscription duration for each customer. To find the subscription duration, you subtract the subscription start from the subscription end.
 
 
+![customer data](https://github.com/user-attachments/assets/421f2ec2-be3a-46da-a39f-7d3621ae1642)
+
+
+Then find the average subscription duration using the "AVG" function. 
+
+
+
