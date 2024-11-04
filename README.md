@@ -32,6 +32,6 @@ The sales performance includes:
 We will also be using pivot tables and pie chart to summarize the total sales by product, region, and month. Furthermore, after analyzing this data set on excel worksheet, we will be importing into Structured Query Language(SQL) to run queries on the data and then proceed to Power Business Intelligence(Power BI) for visualization of the data set.
 This data set  has a total of 75,001 rows and 8 columns to be worked on and this data set is unclean.
 
-The first step is to clean the data by removing the duplicate in the data set. After cleaning the data set, we are left with 33,788 rows to work with. 
+The first step is to clean the data by removing the duplicate in the data set. After cleaning the data set, we are left with 33,788 rows to work with. Then we move on to find the subscription duration for each customer. To find the subscription duration, you subtract the subscription start from the subscription end.
 
 
