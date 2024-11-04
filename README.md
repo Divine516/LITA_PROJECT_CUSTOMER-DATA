@@ -38,7 +38,47 @@ The first step is to clean the data by removing the duplicate in the data set. A
 ![customer data](https://github.com/user-attachments/assets/421f2ec2-be3a-46da-a39f-7d3621ae1642)
 
 
-Then find the average subscription duration using the "AVG" function. 
+Then find the average subscription duration using the "AVG" function. The average subscription duration is **365.35**
+
+ 
+ Most popular subscription type was also analyzed using the "sumif" function. The most popular subscription type is the Basic subscription package with the following breakdown:
+
+- Basic    33,776,735 
+- Premium	 16,899,064 
+- Standard 16,864,376 
 
 
+![average customer data](https://github.com/user-attachments/assets/d4717078-47b8-4457-ba41-4f5f1c56cc2d)
+
+
+We also made use of pivot table to find subscription patterns.
+
+![customer pivot](https://github.com/user-attachments/assets/35411438-0252-4f70-b7cb-e6096585a421)
+
+We moved further to find the total revenue made from sales of all subscription package using the "sum" function and the total revenue is  67,540,175 
+
+
+![revenue customer](https://github.com/user-attachments/assets/7e0b4a07-efa3-4e30-8c38-ac643317991c)
+
+
+For a much clearer and well defined analysis we analyzed the pivot table in a bar chart with a slicer. 
+
+![customer bar chart](https://github.com/user-attachments/assets/efbd5171-6976-498a-9216-ad4767139977)
+
+
+
+## STRUCTURED QUERY LANGUAGE(SQL)
+We want to query the customer data set we have been given to analyze. We want to:
+
+- retrieve the total number of customers from each region.
+- find the most popular subscription type by the number of customers.
+- find customers who canceled their subscription within 6 months.
+- calculate the average subscription duration for all customers.
+- find customers with subscriptions longer than 12 months.
+- calculate total revenue by subscription type.
+- find the top 3 regions by subscription cancellations.
+- find the total number of active and canceled subscriptions.
+
+
+The first step is to create a database where all the data will be queried. 
 
