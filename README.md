@@ -170,6 +170,7 @@ Where canceled subscription is 0 and active subscription is 1.
 
 
 ## POWER BI VISUALIZATION
+The final stage of this analysis is to visualize our data set so that we can use the output to be able to make better decision regarding the business.
 
 
 
