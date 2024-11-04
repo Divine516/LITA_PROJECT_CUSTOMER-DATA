@@ -11,3 +11,27 @@ The primary data sources used is excel worksheet, which is an open-source data.
 - Structured Query Language(SQL) for querying the data
 - Power Business Intelligence(Power BI) for visualizing the data set
 
+
+### CONTENT OF THE CUSTOMER DATA EXCEL SPREADSHEET
+- CustomerID
+- Customer Name
+- Region
+- Subscription Type
+- Subscription Start
+- Subscription End
+- Canceled
+- Revenue
+- Subscription Duration
+
+We have been tasked with analyzing the customer of a retail store. Let the retail store be known as Melewis Boutique. 
+The sales performance includes:
+- Analyze customer data using pivot tables to find subscription patterns.
+- Calculate the average subscription duration and identify the most popular subscription types.
+- Create any other interesting reports.
+
+We will also be using pivot tables and pie chart to summarize the total sales by product, region, and month. Furthermore, after analyzing this data set on excel worksheet, we will be importing into Structured Query Language(SQL) to run queries on the data and then proceed to Power Business Intelligence(Power BI) for visualization of the data set.
+This data set  has a total of 75,001 rows and 8 columns to be worked on and this data set is unclean.
+
+The first step is to clean the data by removing the duplicate in the data set. After cleaning the data set, we are left with 33,788 rows to work with. 
+
+
