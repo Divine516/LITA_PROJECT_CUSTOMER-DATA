@@ -80,5 +80,98 @@ We want to query the customer data set we have been given to analyze. We want to
 - find the total number of active and canceled subscriptions.
 
 
-The first step is to create a database where all the data will be queried. 
+The first step is to create a database where all the data will be queried. ```SQL CREATE database Capstone_project_customer_data```
+Then import the file to be used from excel to the SQL studio. Then ```SQL select* from [dbo].[customer data]``` to view the table.
+
+![real sql](https://github.com/user-attachments/assets/69fb9907-4986-4ccc-9af6-80752aceb5cd)
+
+
+
+In the table we have three empty columns which we neede to remove. Then the alter table function and the drop column function was used. ```SQL ALTER TABLE [dbo].[customer data] 
+DROP COLUMN column10, column11, column12```
+
+![real sql 2](https://github.com/user-attachments/assets/8250e84b-0f0b-482e-ad1d-964119beda46)
+
+
+After removing the empty columns, we want to query the data set and :
+
+1. Retrieve the total number of customers from each region : ```SQL select Region, count (CustomerID) as Region_Customers from [dbo].[customer data]
+GROUP BY Region ```. 
+The total number of customers from each region are:
+- North 	8,433
+- East	  8,488
+- South 	8,446
+- West	  8,420
+  
+![real sql 3](https://github.com/user-attachments/assets/5b1a838a-714c-47a9-88ef-623cda2d83ba)
+
+2. Find the most popular subscription type by the number of customers: ```SQL select SubscriptionType, count (CustomerID) as customer_subscription from [dbo].[customer data]
+Group by SubscriptionType
+Order by customer_subscription desc```
+The most popular subscription is the basic package with a total of 16,921
+
+![real sql 4](https://github.com/user-attachments/assets/de9340d0-bfe1-4cf8-b149-c767779a1363)
+
+3. Find customers who canceled their subscription within 6 months : ```SQL Select *
+FROM [dbo].[customer data]
+WHERE DATEDIFF( month, SubscriptionStart, SubscriptionEnd) <=6```
+No customer canceled their subscription after 6 months.
+
+
+4. Calculate the average subscription duration for all customers: ```SQL select AVG(DATEDIFF(year, subscriptionStart, SubscriptionEnd)) AS average_subscription
+FROM [dbo].[customer data]```
+The average subscription is equal to 1
+
+![real sql 5](https://github.com/user-attachments/assets/e6369049-fcc9-4764-b91b-253ff442c15f)
+
+
+5. Find customers with subscriptions longer than 12 months: ```SQL SELECT CustomerID, SubscriptionType, SubscriptionStart, SubscriptionEnd
+FROM [dbo].[customer data]
+WHERE DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12```
+There was no customer that had subscription more than 12 months or a year.
+
+6. Calculate total revenue by subscription type: ```SQL SELECT SubscriptionType, SUM(revenue) as total_revenue
+FROM [dbo].[customer data]
+GROUP BY SubscriptionType```. The total revenue by subscription type:
+- Basic	33,776,735
+- Premium	16,899,064
+- Standard	16,864,376
+
+
+  ![real sql 6](https://github.com/user-attachments/assets/59b0f7dd-47bb-4205-af36-27c649df986e)
+
+
+
+7. Find the top 3 regions by subscription cancellations: ```SQL SELECT Region, count(*) AS canceled_subscription
+FROM [customer data]
+WHERE canceled = 1
+GROUP BY Region
+ORDER BY canceled_subscription DESC```. The top 3 regions according to those that canceled subscription in descending order:
+- North	5,067
+- South	5,064
+- West	5,044
+
+![real sql 7](https://github.com/user-attachments/assets/7c151cd8-c5a3-4ed2-9672-9d652e57812d)
+
+![real sql 8](https://github.com/user-attachments/assets/391c9f64-9224-439e-848c-1f26ae4973a8)
+
+
+
+8.Find the total number of active and canceled subscriptions: ```SQL SELECT canceled, COUNT(*) AS total_number_of_subscriptions
+FROM [customer data]
+GROUP BY Canceled```. The total number of active and canceled subscription is 
+0 =	18,612
+1 =	15,175
+Where canceled subscription is 0 and active subscription is 1.
+
+![real sql 9](https://github.com/user-attachments/assets/15e6ae44-f357-4678-a064-31b19f36cf72)
+
+
+
+
+## POWER BI VISUALIZATION
+
+
+
+
 
