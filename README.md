@@ -1,7 +1,7 @@
 # CAPSTONE DATA ANALYSIS PROJECT 
 ## TITLE: CUSTOMER DATA
 ### Project Overview 
-The Data Analysis project aims to explore and use customer data to idetify trends, patterns, and insights that can drive better business decisions. The analysis covers various aspects such as sales performance, customer behaviour, product trends and geographic distribution. The goal is to help businesses make data-driven desicions by providing a comprehensive understanding of their sales data.
+The Data Analysis project aims to explore and use customer data to identify trends and patterns in customer subscription to make beter business decisions. The analysis covers various aspects such as subscription start, subscription end, subscription type, geographical locations etc. The goal is to help businesses make data-driven desicions by providing a comprehensive understanding of their customer data.
 
 ### Data Sources 
 The primary data sources used is excel worksheet, which is an open-source data.
@@ -21,15 +21,15 @@ The primary data sources used is excel worksheet, which is an open-source data.
 - Subscription End
 - Canceled
 - Revenue
-- Subscription Duration
+  
 
-We have been tasked with analyzing the customer of a retail store. Let the retail store be known as Melewis Boutique. 
-The sales performance includes:
+We have been tasked with analyzing the customer of a retail store. Let the retail store be known as Melewis Decoder. 
+The customer data analyzation includes:
 - Analyze customer data using pivot tables to find subscription patterns.
 - Calculate the average subscription duration and identify the most popular subscription types.
 - Create any other interesting reports.
 
-We will also be using pivot tables and pie chart to summarize the total sales by product, region, and month. Furthermore, after analyzing this data set on excel worksheet, we will be importing into Structured Query Language(SQL) to run queries on the data and then proceed to Power Business Intelligence(Power BI) for visualization of the data set.
+We will also be using pivot tables and bar chart to summarize the subscription pattern. Furthermore, after analyzing this data set on excel worksheet, we will be importing into Structured Query Language(SQL) to run queries on the data and then proceed to Power Business Intelligence(Power BI) for visualization of the data set.
 This data set  has a total of 75,001 rows and 8 columns to be worked on and this data set is unclean.
 
 The first step is to clean the data by removing the duplicate in the data set. After cleaning the data set, we are left with 33,788 rows to work with. Then we move on to find the subscription duration for each customer. To find the subscription duration, you subtract the subscription start from the subscription end.
@@ -170,9 +170,10 @@ Where canceled subscription is 0 and active subscription is 1.
 
 
 ## POWER BI VISUALIZATION
-The final stage of this analysis is to visualize our data set so that we can use the output to be able to make better decision regarding the business.
+The final stage of this analysis is to visualize our data set so that we can use the output to be able to make better decision regarding the business. We visualized:
 
 
 
+![power bi customer](https://github.com/user-attachments/assets/877c39d6-bfb4-46f5-ba41-0f41f682fa22)
 
 
